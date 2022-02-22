@@ -1,15 +1,7 @@
 console.log('a11y-helper is running');
 marauderMenu();
 
-function swearUptoNoGood(phrase) {
-    var rightPW = 'mischief';
-    if (rightPW === phrase) {
-        return true;
-    } else {
-        $('#marauderMap').remove();
-        return false;
-    }
-}
+
 
 function marauderMenu() {
     var options = ['sensory highlighter', 'nbsp highlighter', 'trickle bypass', 'open accordions', 'verify accordion count'];
