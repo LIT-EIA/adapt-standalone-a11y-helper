@@ -1,9 +1,14 @@
 console.log('a11y-helper is running');
 marauderMenu();
 
-
+function addMarauder() {
+    var mcss = '#marauderMap{display:block;position:fixed;top:50%;left:40%;background-color:#69459C;color:white;padding:2em;font-weight:bold;}  li{list-style:none; text-indent: -2.3em;text-decoration:underline;cursor:pointer}';
+    $('head').append('<style>' + mcss + '</style>');
+    $('body').append('<div id="marauderMap"></div>');
+}
 
 function marauderMenu() {
+    addMarauder();
     var options = ['sensory highlighter', 'nbsp highlighter', 'trickle bypass', 'open accordions', 'verify accordion count'];
     var lis = options.map(function(item) {
         return ('<li>' + item + '</li>');
